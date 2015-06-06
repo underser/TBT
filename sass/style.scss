@@ -19,6 +19,22 @@ body {
 	font-weight: bold;
 }
 
+.blink-text {
+	-webkit-animation: blink-text 2s linear infinite;
+	  animation: blink-text 3s linear infinite;
+}
+
+@-webkit-keyframes blink-text {
+  0% { color: rgba(34, 34, 34, 1); }
+  50% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 1); }
+}
+@keyframes blink-text {
+  0% { color: rgba(34, 34, 34, 1); }
+  50% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 1); }
+}
+
 .btn-info {
 	border-radius: 15px;
 }
@@ -42,6 +58,9 @@ body {
 	}
 	button {
 		margin-top: -8px;
+		@include breakpoint(max-width 600px) {
+			font-size: 13px;
+		}
 	}
 }
 
@@ -53,14 +72,14 @@ body {
 
 .promo__product-box {
 	margin-top: -50px;
-	margin-bottom: -53px;
+	margin-bottom: -163px;
 	a {
 		display: block;
 	}
 }
 
 .promo__right {
-	margin: 30px 0 0 0;
+	margin-top: 30px;
 	.main-nav {
 		position: absolute;
 		left: 0px;
@@ -154,12 +173,6 @@ body {
 	background-position: 0 -98px;
 }
 
-.promo__product-box {
-	@include breakpoint(max-width 600px) {
-		display: none;
-	}
-}
-
 .promo__right--title {
 	text-transform: uppercase;
 	color: #fff;
@@ -172,7 +185,7 @@ body {
 .btn-warning {
 	overflow: hidden;
 	text-transform: uppercase;
-	@include breakpoint(max-width 760px) {
+	@include breakpoint(max-width 767px) {
 		h3 {
 			font-size: 18px;
 		}
@@ -622,6 +635,7 @@ body {
 	.bl-8__col-blu {
 		color: #1b8bae;
 		text-transform: uppercase;
+		font-weight: bold;
 	}
 }
 
