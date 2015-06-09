@@ -5422,6 +5422,8 @@ body {
     background: url(../img/bl-7-sprites.png) no-repeat;
     background-position: -115px 0;
     background-size: cover; }
+  .bl-7__item-4 h4 {
+    margin-left: -10px; }
 
 .bl-7-item--circle-1, .bl-7-item--circle-2, .bl-7-item--circle-3, .bl-7-item--circle-4 {
   width: 130px;
@@ -5461,7 +5463,8 @@ body {
 
 .bl-7-item--circle-4 {
   border: 3px solid #87cf9d;
-  margin-right: -40px; }
+  margin-right: -40px;
+  position: relative; }
   .bl-7-item--circle-4 h5 {
     color: #87cf9d; }
 

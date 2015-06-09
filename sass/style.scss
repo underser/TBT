@@ -576,6 +576,10 @@ body {
 		background-position: -115px 0;
 		background-size: cover;
 	}
+
+	h4 {
+		margin-left: -10px;
+	}
 }
 
 .bl-7-item--circle-1,
@@ -612,7 +616,7 @@ body {
 .bl-7-item--circle-1 { border: 3px solid #d7af42; h5 {color: #d7af42}}
 .bl-7-item--circle-2 { border: 3px solid #b3b752; h5 {color: #b3b752}}
 .bl-7-item--circle-3 { border: 3px solid #97acd4; h5 {color: #97acd4}}
-.bl-7-item--circle-4 { border: 3px solid #87cf9d; h5 {color: #87cf9d} margin-right: -40px;}
+.bl-7-item--circle-4 { border: 3px solid #87cf9d; h5 {color: #87cf9d} margin-right: -40px; position: relative;}
 
 .bl-8__wrapper {
 	background: url(../img/bl-8-bg.jpg) no-repeat;
