@@ -4909,7 +4909,8 @@ button.close {
   src: url(../fonts/MyriadPro-Regular.otf); }
 
 body {
-  font: 300 16px "Myriad Pro", sans-serif; }
+  font: 300 16px "Myriad Pro", sans-serif;
+  overflow-x: hidden; }
 
 .title {
   text-transform: uppercase;
@@ -5297,18 +5298,18 @@ body {
   display: none; }
 
 .graph__item {
-  height: 500px;
+  height: 300px;
   position: relative; }
 
 .graph__item--right {
-  margin-top: 50%;
+  margin-top: 25%;
   margin-left: 190px; }
 
 .graph__item--left {
   position: absolute;
   bottom: 0; }
   .graph__item--left p {
-    margin-top: 20px;
+    margin-top: 30px;
     text-transform: uppercase; }
 
 .graph-1, .graph-2, .graph-3 {
@@ -5316,16 +5317,17 @@ body {
   margin-left: -12px; }
 
 .graph-1 {
-  height: 486px;
+  height: 306px;
   background: #02cd58; }
 
 .graph-2 {
-  height: 346px;
+  height: 166px;
   background: #ffc600; }
 
 .graph-3 {
-  height: 156px;
-  background: #e88c8d; }
+  height: 56px;
+  background: #e88c8d;
+  margin-left: 5px; }
 
 .bl-6__wrapper {
   padding: 30px 0 55px 0;
@@ -5636,7 +5638,9 @@ body {
     text-transform: uppercase;
     text-align: center;
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    right: 0;
+    left: 0; }
 
 .bl-12__item-photo {
   margin-left: 24%;
@@ -5664,7 +5668,7 @@ body {
   color: #07a3a9; }
 
 .bl-14__item {
-  padding: 50px 30px 30px 30px;
+  padding: 70px 30px 0 30px;
   background: url(../img/bl-14-item-bg.png) no-repeat 0 0;
   background-size: 100% 100%; }
   .bl-14__item p {
@@ -5686,8 +5690,8 @@ body {
     height: 62px; }
 
 .bl-15__wrapper {
-  background: url(../img/bl-15-bg.jpg) no-repeat;
-  background-size: 100% 100%; }
+  background: url(../img/bl-15-bg.jpg) center top no-repeat;
+  background-size: cover; }
 
 .bl-15__item {
   height: 212px;
@@ -5740,8 +5744,7 @@ body {
 .bl-17__right h3:first-child {
   color: #fff; }
 .bl-17__right .form {
-  padding-top: 38px;
-  padding-bottom: 38px;
+  padding: 38px 30px;
   background: #fff;
   color: #787878;
   border-radius: 6px;
