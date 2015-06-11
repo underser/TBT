@@ -4918,40 +4918,30 @@ body {
   font-weight: bold; }
 
 .blink-text {
-  -webkit-animation: blink-text 2s linear infinite;
-  animation: blink-text 3s linear infinite; }
+  -webkit-animation: blink-text 1s linear infinite;
+  animation: blink-text 1s linear infinite; }
 
 @-webkit-keyframes blink-text {
   0% {
-    color: #222222; }
+    text-shadow: 0px 0px 0px transparent; }
 
   50% {
-    color: rgba(34, 34, 34, 0); }
+    text-shadow: 1px 1px 2px #ffba00; }
 
   100% {
-    color: #222222; } }
-
-@keyframes blink-text {
-  0% {
-    color: #222222; }
-
-  50% {
-    color: rgba(34, 34, 34, 0); }
-
-  100% {
-    color: #222222; } }
+    text-shadow: 1px 1px 5px #ffba00; } }
 
 .btn-info {
-  border-radius: 15px; }
+  border-radius: 15px;
+  outline: 0; }
+  .btn-info:focus {
+    outline: 0; }
 
 .header-wrapper {
   background-color: #f7f7f7; }
 
 .main-header {
   display: flex; }
-  .main-header .logo {
-    position: relative;
-    top: 50px; }
   .main-header .contact-info {
     margin: auto; }
   .main-header .phone-number {
@@ -4972,7 +4962,8 @@ body {
   margin-top: -50px;
   margin-bottom: -163px; }
   .promo__product-box a {
-    display: block; }
+    display: block;
+    outline: 0; }
 
 .promo__right {
   margin-top: 30px; }
@@ -5668,7 +5659,7 @@ body {
   color: #07a3a9; }
 
 .bl-14__item {
-  padding: 70px 30px 0 30px;
+  padding: 70px 20px 0 20px;
   background: url(../img/bl-14-item-bg.png) no-repeat 0 0;
   background-size: 100% 100%; }
   .bl-14__item p {
@@ -5680,14 +5671,17 @@ body {
 
 .bl-14__item-photo {
   display: flex;
-  width: 68px;
-  height: 68px;
+  width: 100px;
+  height: 100px;
   background: #fff;
   border: 1px solid #d8d7c8; }
   .bl-14__item-photo img {
     margin: auto;
-    width: 62px;
-    height: 62px; }
+    width: 100px;
+    height: 100px; }
+
+.bl-14__text {
+  margin-left: 5%; }
 
 .bl-15__wrapper {
   background: url(../img/bl-15-bg.jpg) center top no-repeat;
@@ -5743,20 +5737,21 @@ body {
   color: #fff; }
 .bl-17__right h3:first-child {
   color: #fff; }
-.bl-17__right .form {
+
+.form {
   padding: 38px 30px;
   background: #fff;
   color: #787878;
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
-  .bl-17__right .form .form-header {
+  .form .form-header {
     text-align: center;
     display: block;
     color: #000;
     margin-bottom: 88px;
     padding-bottom: 12px;
     border-bottom: 1px solid #e3e3e3; }
-  .bl-17__right .form button {
+  .form button {
     width: 100%;
     margin-top: 60px; }
 
